@@ -125,10 +125,10 @@ function Header() {
         <div className="max-w-screen-xl mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex md:px-8">
           <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl">
             <h2 className="text-4xl text-gray-800 font-extrabold md:text-5xl">
-              Appliance Broken? — <span className="text-red-700">We Fix It Today.</span>
+              Plumbing Issue? — <span className="text-red-700">We Fix It Today.</span>
             </h2>
             <p>
-              Fast, affordable repair for <span className="font-bold">refrigerators, washers, dryers, ovens & more.</span>{" "}
+              Fast plumbing service for <span className="font-bold">leaks, clogged drains, water heaters, toilets & more.</span>{" "}
               Same-day service available.
             </p>
             <div className="items-center gap-x-3 space-y-2 sm:flex sm:space-y-0">
@@ -170,7 +170,7 @@ function About() {
             <h3 className="text-red-700 font-semibold">Flexible payment options available</h3>
             <p className="text-gray-800 text-3xl font-extrabold sm:text-4xl">Fix It Today — Pay Over Time</p>
             <p className="mt-3">
-              Don’t delay your repair because of cost. Split your payment into smaller, manageable amounts:
+              Don’t let plumbing problems get worse because of cost.
             </p>
             <div className="p-4 bg-gray-200 rounded-xl shadow-xl">
               <h4 className="font-bold text-2xl mb-2">As low as $25/month for eligible customers</h4>
@@ -198,10 +198,10 @@ function Benefits() {
   return (
     <section className="py-10 px-4 md:px-10 rounded-2xl shadow-md md:max-w-4xl mx-auto my-12">
       <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-10">
-        Don’t Let a Small Problem Turn Into a Big Expense
+        Small Leak Today — Big Damage Tomorrow
       </h2>
       <p className="text-xl font-semibold text-center text-gray-800 mb-10">
-        A leaking washer or a warm fridge won’t fix itself. Waiting only makes repairs more expensive.
+       A leaking pipe or clogged drain won’t fix itself.
       </p>
       <p className="text-3xl font-bold text-center text-red-700 mb-10">Fix it now — before it gets worse.</p>
     </section>
@@ -215,8 +215,8 @@ function CTA() {
       <div className="w-full h-full rounded-full bg-gradient-to-r from-[#58AEF1] to-pink-500 absolute -top-12 -right-14 blur-2xl opacity-10"></div>
       <div className="max-w-xl mx-auto text-center relative">
         <div className="py-4">
-          <h3 className="text-xl text-gray-200 font-semibold md:text-2xl">Get Your Appliance Fixed Today</h3>
-          <h4 className="text-sm text-gray-200 mt-4">Fast service. No hidden fees. Pay over time.</h4>
+          <h3 className="text-xl text-gray-200 font-semibold md:text-2xl">Need a plumber today?</h3>
+          <h4 className="text-sm text-gray-200 mt-4">Fast service. Pay later.</h4>
         </div>
         <div className="mt-5 items-center justify-center gap-3 sm:flex">
           <a
@@ -240,10 +240,10 @@ function CTA() {
 // ================= WhyWe =================
 function WhyWe() {
   const benefits = [
-    { title: "⚡Same-Day Service Available", desc: "We know you can’t wait days for a repair. That’s why we offer same-day service whenever possible." },
-    { title: "💰Transparent Pricing (No Surprises)", desc: "You’ll always know the price before we start. No hidden fees. No surprises." },
-    { title: "🧰Experienced Technicians", desc: "Our technicians have years of hands-on experience fixing all major appliances." },
-    { title: "🛠We Repair All Major Brands", desc: "Samsung, LG, Whirlpool, GE and more — we’ve seen it all." },
+    { title: "🚰 Same-Day Service", desc: "We fix urgent plumbing issues fast." },
+    { title: "💰 Transparent Pricing", desc: "No hidden fees ever." },
+    { title: "🧰 Skilled Plumbers", desc: "Experienced professionals." },
+    { title: "🛠 All Plumbing Jobs", desc: "Leaks, drains, heaters, toilets." },
   ];
 
   return (
@@ -276,13 +276,13 @@ const LeadGen = memo(() => (
       }}
     >
       <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="_next" value="https://appliance.matanato.com/thank-you" />
-      <input type="hidden" name="_subject" value="New lead - Appliance Repair!" />
+      <input type="hidden" name="_next" value="https://plumbing.matanato.com/thank-you" />
+      <input type="hidden" name="_subject" value="New lead - Plumbing!" />
 
       <input type="name" name="name" placeholder="Name" required className="w-full p-3 border rounded" />
       <input type="phone" name="phone" placeholder="Phone" required className="w-full p-3 border rounded" />
       <input type="text" name="zip" placeholder="ZIP code" required className="w-full p-3 border rounded" />
-      <textarea type="textarea" name="issue" placeholder="Issue" required className="w-full p-3 border rounded" />
+      <textarea type="textarea" name="issue" placeholder="Describe your plumbing issue" required className="w-full p-3 border rounded" />
 
       <label>
         <input type="checkbox" name="installments" /> Pay in installments
@@ -303,7 +303,7 @@ function ThankYou() {
     <div className="min-h-screen flex flex-col justify-center items-center bg-gray-50 px-4">
       <h1 className="text-4xl font-extrabold text-gray-800 mb-4">Thank you!</h1>
       <p className="text-lg text-gray-600 mb-6 text-center">
-        Your request has been received. Our technician will contact you shortly (usually in 5-10 min)
+        Your request has been received. We will contact you shortly (usually in 5-10 min)
       </p>
       <a
         href="/"
@@ -319,7 +319,7 @@ function ThankYou() {
 export default function App() {
   return (
     <>
-      <Pixel service="Appliance"/>
+      <Pixel service="Plumbing"/>
       <Routes>
         <Route
           path="/"
